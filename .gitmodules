@@ -6,3 +6,7 @@
 	path = notificador
 	url = https://github.com/Vacilon/gss-notificador.git
 	branch = master
+[submodule "pagos"]
+	path = pagos
+	url = https://github.com/Vacilon/gss-pagos.git
+	branch = master
