@@ -2,3 +2,7 @@
 	path = gestor-de-clientes
 	url = https://github.com/Vacilon/gss-gestor-de-clientes.git
 	branch = master
+[submodule "notificador"]
+	path = notificador
+	url = https://github.com/Vacilon/gss-notificador.git
+	branch = master
