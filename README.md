@@ -36,7 +36,7 @@ Descarga el código del repositorio utilizando el siguiente comando:
 
 Ingresa a la carpeta del proyecto:
 
-`cd gss-microservices`
+`cd docker-microservicios`
 
 Descarga el código fuente de los microservicios y componentes del sistema:
 
