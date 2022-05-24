@@ -1,0 +1,4 @@
+[submodule "gestor-de-clientes"]
+	path = gestor-de-clientes
+	url = https://github.com/Vacilon/gss-gestor-de-clientes.git
+	branch = master
