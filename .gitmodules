@@ -10,3 +10,7 @@
 	path = pagos
 	url = https://github.com/Vacilon/gss-pagos.git
 	branch = master
+[submodule "reporteador"]
+	path = reporteador
+	url = https://github.com/Vacilon/gss-reporteador.git
+	branch = master
