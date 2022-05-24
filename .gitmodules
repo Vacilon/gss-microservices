@@ -14,3 +14,7 @@
 	path = reporteador
 	url = https://github.com/Vacilon/gss-reporteador.git
 	branch = master
+[submodule "simulador"]
+	path = simulador
+	url = https://github.com/Vacilon/gss-simulador.git
+	branch = master
