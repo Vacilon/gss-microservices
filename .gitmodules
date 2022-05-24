@@ -18,3 +18,7 @@
 	path = simulador
 	url = https://github.com/Vacilon/gss-simulador.git
 	branch = master
+[submodule "cliente"]
+	path = cliente
+	url = https://github.com/Vacilon/gss-cliente.git
+	branch = master
