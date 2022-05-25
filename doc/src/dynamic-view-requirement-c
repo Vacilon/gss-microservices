@@ -1,0 +1,65 @@
+@startuml
+
+actor "Agente de seguros" as A
+
+participant "Contenedor: \nCliente" as C
+
+participant "Conector: \nAPI Gateway" as G
+
+participant "Contenedor: \nReporteador" as R
+
+participant "Contenedor:\nNotificador" as N
+
+participant "Sistema:\nTelegram" as T
+
+actor "Asegurado" as S
+
+Activate A
+
+A->C: Enviar póliza a cliente
+
+Activate C
+
+C->G: Realizar petición
+
+Activate G
+
+G->R: Solicitar póliza
+
+Activate R
+
+R-->G: Solicitar póliza
+
+Deactivate R
+
+G->N: Realizar petición
+
+Activate N
+
+N->T: Enviar notificación
+
+Activate T
+
+T->S: Enviar notificación
+
+Activate S
+
+Deactivate S
+
+Deactivate T
+
+N-->G: Realizar petición
+
+Deactivate N
+
+G-->C:Realizar petición
+
+Deactivate G
+
+C-->A:Enviar póliza a cliente
+
+Deactivate C
+
+Deactivate A
+
+@enduml

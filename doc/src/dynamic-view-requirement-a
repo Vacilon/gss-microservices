@@ -1,0 +1,38 @@
+@startuml
+actor "Agente de seguros" as A
+
+participant "Contenedor: \nCliente" as C
+
+participant "Conector: \nAPI Gateway" as G
+
+participant "Contenedor:\nPagos" as P
+
+Activate A
+
+A->C: Visualizar lista de clientes
+
+Activate C
+
+C->G: Realizar petición
+
+Activate G
+
+G->P: Solicita información
+
+Activate P
+
+P-->G:Solicita información
+
+Deactivate P
+
+G-->C:Realizar petición
+
+Deactivate G
+
+C-->A:Visualizar lista de clientes
+
+Deactivate C
+
+Deactivate A
+
+@enduml
